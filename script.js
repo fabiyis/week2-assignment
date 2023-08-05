@@ -1,3 +1,5 @@
+// pseudocode
+
 /* declare variables:
  birthYear, currentYear, age; */ 
 
@@ -20,4 +22,28 @@ FOR EACH number IN array
         OUTPUT number
     END IF...
 END FOR EACH
-*/
+*/ 
+
+// javascript
+
+const prompt = require('prompt-sync')();
+
+// Input birth year and current year
+let birthYear = parseInt(prompt("Enter your birth year: "));
+let currentYear = parseInt(prompt("Enter the current year: "));
+
+// Calculate age
+let age = currentYear - birthYear;
+
+// Output age
+console.log("Your age is:", age);
+
+// Array of numbers
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Loop through array and output even numbers
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+        console.log(numbers[i]);
+    }
+}
